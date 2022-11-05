@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.container{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #343755;
+}
+.container1{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.sep{
+    display: flex;
+}
+.container1 .logo{
+    position: relative;
+    width: 160px;
+    height: 39px;
+}
+
+.container1 .logo h3{
+      font-size: 1.2rem;
+      color:#fff;
+      font-family: 'Varela Round', sans-serif;
+      font-weight: bold;
+}
+.container1 .logo h3 span img{
+    position: relative;
+    top: 7px;
+    width:20%; 
+}
+
+.container1 .search #search-bar{
+    padding: 10px;
+    width: 520px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+
+#dropbox{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color:#ada59e;
+
+}
+#dropbox:hover{
+    color: #ffff;
+}
+
+#dropbox option{
+    color: black;
+}
+.signin{
+    width: 70px;
+    padding: 10px;
+    background-color:rgb(228, 36, 36);
+    border-radius: 7px;
+    margin: 2px;
+}
+.signin a{
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+}
+/*-------End of header----------*/
+
+.header1{
+    background-color:#1c1e38 ;
+    height: 35px;
+    padding: 5px;
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.navbar .link a{
+    text-decoration: none;
+    color: #a39a9a;
+    padding: 5px;
+}
+.navbar .link a:hover{
+    color: #ffff;
+}
+.navbar .offer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px; 
+}
+
+/* end of header1*/
+
+.poster{
+    display: flex;
+    position: relative;
+    margin: 15px;
+}
+.slider img{
+    width: 5%;
+}
+.poster img{
+    padding: 10px;
+    width: 600px;
+    margin-left: 10px;
+}
+
+#preview, #next{
+    width: 20px;
+    cursor: pointer;
+}
+#next{
+    float: right;
+}
+
+/*   RECOMMENDING MOVIES   */
+.movies{
+    background-color: rgba(151, 150, 150,0.2);
+}
+
+.recommend >p{
+    font-size: 20px;
+    font-weight: bold;  
+    padding: 20px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    overflow: hidden;
+}
+.item-a{
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+ul li{
+    display: flex;
+}
+.cont{
+    width: 190px;
+    height: 312px;
+}
+.cont img{
+    border-radius: 15px;
+}
+
+.react{
+    position: relative;
+    top: -8px;
+    border-radius: 0 0 5px 5px;
+    width: 188px;
+    height: 35px;
+    background-color: black;
+    display: flex;
+    padding: 3px;
+}
+.react img{
+    width:30px;
+   color: white;
+}
+.react p{
+    position: relative;
+    top: 5px;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+
+@media (max-width:950px){
+   .container{
+    width:100%;
+    font-size: 70%;
+   }
+   .header1{
+    width: 100%;
+}
+
+}
+
+@media (max-width:680px){
+    .container{
+     width:100%;
+     font-size: 50%;
+    }
+    .header1{
+        width: 100%;
+        display: flex;
+    }
+    .cont img{
+        min-width: 100%;
+    }
+ }
